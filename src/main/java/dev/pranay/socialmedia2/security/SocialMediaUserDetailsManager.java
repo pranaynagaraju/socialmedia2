@@ -26,11 +26,9 @@ public class SocialMediaUserDetailsManager implements UserDetailsService {
                     profile.getPassword(),
                     List.of(new SimpleGrantedAuthority("USER")));
         }
-        else
-        {
-            return null;
+        else {
+         throw new UsernameNotFoundException(email);
         }
-//            throw new EmailNotFound(email);
     }
 
     public Profile createProfile (Profile profile)
