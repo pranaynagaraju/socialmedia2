@@ -15,6 +15,8 @@ public class Comment {
     @UuidGenerator
     private String commentId;
     private int postId;
-    private String userId;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "user_id", referencedColumnName = "userId")
+    private Profile profile;
     private String comment;
 }

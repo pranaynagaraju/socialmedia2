@@ -17,24 +17,24 @@ public class SocialMediaUserDetailsManager implements UserDetailsService {
 
     @Autowired
     private ProfileRepo profileRepo;
+
     @Override
     public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
-       Optional<Profile> profileOptional= profileRepo.findByEmail(email);
-        if(profileOptional.isPresent()) {
+        Optional<Profile> profileOptional = profileRepo.findByEmail(email);
+        if (profileOptional.isPresent()) {
             Profile profile = profileOptional.get();
-            return new User(profile.getEmail(),
-                    profile.getPassword(),
-                    List.of(new SimpleGrantedAuthority("USER")));
+            return new Profile(profile.getUserId(),
+                    profile.getUsername(),
+                    profile.getEmail(),
+                    profile.getPassword());
+        } else {
+            throw new UsernameNotFoundException(email);
         }
-        else
-        {
-            return null;
-        }
-//            throw new EmailNotFound(email);
     }
 
-    public Profile createProfile (Profile profile)
-    {
+    public Profile createProfile(Profile profile) {
         return profileRepo.save(profile);
-    };
+    }
+
+    ;
 }

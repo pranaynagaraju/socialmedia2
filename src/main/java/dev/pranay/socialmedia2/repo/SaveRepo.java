@@ -7,7 +7,8 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface SaveRepo extends JpaRepository<Save,String> {
-    Save findByPostIdAndUserId(int postId, String userId);
-    List<Save> findByUserIdOrderByCreatedOnDesc(String uid);
+public interface SaveRepo extends JpaRepository<Save, String> {
+    Save findByPostIdAndProfile_UserId(int postId, String userId);
+
+    List<Save> findByProfile_UserIdOrderByCreatedOnDesc(String uid);
 }

@@ -1,4 +1,5 @@
 package dev.pranay.socialmedia2.entity;
+
 import jakarta.persistence.*;
 import lombok.Data;
 import org.hibernate.annotations.UuidGenerator;
@@ -13,5 +14,7 @@ public class Like {
     @Column(updatable = false, nullable = false)
     private String likeId;
     private int postId;
-    private String userId;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "user_id", referencedColumnName = "userId")
+    private Profile profile;
 }

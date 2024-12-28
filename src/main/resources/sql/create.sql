@@ -38,3 +38,8 @@ CREATE TABLE socialmedia.users_tbl (
     password VARCHAR(255),
     PRIMARY KEY (user_id)
 );
+
+    alter table if exists socialmedia.posts
+       add constraint FKmxk8mmhmidvoaso6ou8je2mie
+       foreign key (user_id)
+       references socialmedia.profiles
