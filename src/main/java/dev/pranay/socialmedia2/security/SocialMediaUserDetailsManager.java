@@ -36,5 +36,5 @@ public class SocialMediaUserDetailsManager implements UserDetailsService {
         return profileRepo.save(profile);
     }
 
-    ;
+
 }
