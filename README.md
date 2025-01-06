@@ -11,8 +11,7 @@ SocialMedia2 is a modern social media backend application built with Java, Sprin
 - **Comments**: Add, edit, delete, and view comments on posts.
 - **Likes**: Like and unlike posts and comments.
 - **Notifications**: Event-based notifications for user activities.
-- **Authentication**: Secure JWT-based authentication.
-- **Scalability**: Containerized deployment with Docker.
+- **Authentication**: Basic Authentication (Will be upgraded to JWT based authentication)
 
 ## Technologies Used
 - **Language**: Java 17+
