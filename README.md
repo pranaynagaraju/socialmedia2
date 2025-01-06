@@ -1,6 +1,6 @@
 # SocialMedia2 Backend
 
-![Java](https://img.shields.io/badge/Java-11%2B-blue) ![SpringBoot](https://img.shields.io/badge/Spring%20Boot-3.x-green) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15+-blue) ![Docker](https://img.shields.io/badge/Docker-Enabled-blue)
+![Java](https://img.shields.io/badge/Java-21%2B-blue) ![SpringBoot](https://img.shields.io/badge/Spring%20Boot-3.x-green) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15+-blue) ![Docker](https://img.shields.io/badge/Docker-Enabled-blue)
 
 ## Description
 SocialMedia2 is a modern social media backend application built with Java, Spring Boot, and PostgreSQL. It provides RESTful APIs to handle user management, posts, comments, likes, and more. Designed for scalability, it integrates with Angular for the frontend and is deployed using Docker.
