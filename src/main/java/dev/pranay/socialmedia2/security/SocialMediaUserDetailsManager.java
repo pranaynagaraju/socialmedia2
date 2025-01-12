@@ -26,7 +26,8 @@ public class SocialMediaUserDetailsManager implements UserDetailsService {
             return new Profile(profile.getUserId(),
                     profile.getUsername(),
                     profile.getEmail(),
-                    profile.getPassword());
+                    profile.getPassword(),
+                    profile.getUserImage());
         } else {
             throw new UsernameNotFoundException(email);
         }

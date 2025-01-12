@@ -59,7 +59,7 @@ public class PostServiceImpl implements PostService {
         for (Post post : postsList) {
             PostDto postDto = new PostDto();
             postDto.setName(post.getProfile().getUsername());
-            postDto.setProfilePicture("dummy");
+            postDto.setProfilePicture(post.getProfile().getUserImage());
             postDto.setPostId(post.getPostId());
             postDto.setImageUrl(post.getImageUrl());
             postDto.setPostText(post.getPostText());
@@ -153,13 +153,13 @@ public class PostServiceImpl implements PostService {
                     postDetailsDto.setLiked(likeRepo.findByPostIdAndProfile_UserId(postId, profile.getUserId()) != null);
                     postDetailsDto.setSaved(saveRepo.findByPostIdAndProfile_UserId(postId, profile.getUserId()) != null);
                     postDetailsDto.setPostUploadedByUserName(post.getProfile().getUsername());
-                    postDetailsDto.setPostUploadedByUserPhoto("Dummy image");
+                    postDetailsDto.setPostUploadedByUserPhoto(post.getProfile().getUserImage());
 
                 });
         for (Comment comment : comments) {
             CommentDto commentDto = new CommentDto();
             commentDto.setCommentedUserName(comment.getProfile().getUsername());
-            commentDto.setCommentedUserPhoto("Dummy image");
+            commentDto.setCommentedUserPhoto(comment.getProfile().getUserImage());
             commentDto.setComment(comment.getComment());
             commentDto.setCommentId(comment.getCommentId());
             commentDtoList.add(commentDto);

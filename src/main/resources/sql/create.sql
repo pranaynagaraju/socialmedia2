@@ -43,3 +43,6 @@ CREATE TABLE socialmedia.users_tbl (
        add constraint FKmxk8mmhmidvoaso6ou8je2mie
        foreign key (user_id)
        references socialmedia.profiles
+
+           alter table if exists socialmedia.profiles
+              add column user_image varchar(255)

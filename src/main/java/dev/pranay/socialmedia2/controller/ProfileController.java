@@ -52,4 +52,9 @@ public class ProfileController {
         List<SearchUserDto> searchUserDto = profileService.searchUser(q.toLowerCase());
         return new ResponseEntity<>(searchUserDto, HttpStatus.OK);
     }
+
+    @GetMapping("/authenticate")
+    public ResponseEntity<Boolean> authenticate() {
+        return new ResponseEntity<>(true, HttpStatus.OK);
+    }
 }

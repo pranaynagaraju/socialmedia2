@@ -62,9 +62,9 @@ public class ProfileServiceImpl implements ProfileService {
             Profile loggedInProfile = (Profile) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
             Profile profile = profileOptional.get();
             profileDto.setEmail(profile.getEmail());
-            profileDto.setUserName(profileDto.getUserName());
+            profileDto.setUserName(profile.getUsername());
             //TODO Need to modify this corectly
-            profileDto.setUserPhotoUrl("Dummy url");
+            profileDto.setUserPhotoUrl(profile.getUserImage());
             List<Post> posts = postRepo.findByProfile_UserIdOrderByCreatedOnDesc(profile.getUserId());
             List<PostBasicDetailsDto> postBasicDetailsDtoList = new ArrayList<>();
             for (Post post : posts) {
@@ -115,7 +115,7 @@ public class ProfileServiceImpl implements ProfileService {
             searchUserDto.setUserName(profile.getUsername());
             searchUserDto.setEmail(profile.getEmail());
             //TODO need to correct this
-            searchUserDto.setUserPhotoUrl("Dummy Url");
+            searchUserDto.setUserPhotoUrl(profile.getUserImage());
             searchResults.add(searchUserDto);
         }
         return searchResults;

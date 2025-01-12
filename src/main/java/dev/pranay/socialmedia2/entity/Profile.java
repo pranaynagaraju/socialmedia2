@@ -28,6 +28,7 @@ public class Profile implements UserDetails {
     private String username;
     private String email;
     private String password;
+    private String userImage;
     @Transient
     private GrantedAuthority grantedAuthority;
 
@@ -35,11 +36,12 @@ public class Profile implements UserDetails {
 
     }
 
-    public Profile(String userId, String username, String email, String password) {
+    public Profile(String userId, String username, String email, String password, String userImage) {
         setUserId(userId);
         setUsername(username);
         setEmail(email);
         setPassword(password);
+        setUserImage(userImage);
     }
 
     @Override

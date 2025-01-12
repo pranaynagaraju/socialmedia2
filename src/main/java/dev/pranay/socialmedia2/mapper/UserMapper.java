@@ -10,7 +10,7 @@ public class UserMapper {
         userDto.setName(profile.getUsername());
         userDto.setEmail(profile.getEmail());
         //TODO need to set this correctly
-        userDto.setPhotoURL("Dummy url");
+        userDto.setPhotoURL(profile.getUserImage());
         return userDto;
     }
 }
