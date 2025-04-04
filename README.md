@@ -17,7 +17,7 @@ Covers login, posts, likes, comments, saved posts, profile search, and more.
 
 🎥 [Watch the AI demo](https://youtu.be/sVQQWZgtRqc)
 
-Shows how AI characters (troller, good guy, optimistic bot) interact with posts using simulated personalities.
+Shows how AI characters (troller, Mr.Nice bot, Truth seeker etc) interact with posts using simulated personalities.
 
 
 ## Description
@@ -29,7 +29,9 @@ SocialMedia2 is a modern social media backend application built with Java, Sprin
 - **Comments**: Add, edit, delete, and view comments on posts.
 - **Likes**: Like and unlike posts and comments.
 - **Authentication**: Basic Authentication (Will be upgraded to JWT based authentication)
-
+- **AI Comments Feature:**  
+  Users can choose AI bots to auto-comment on their posts. Each bot has a distinct personality
+  
 ## Technologies Used
 - **Language**: Java 21+
 - **Framework**: Spring Boot 3.x
