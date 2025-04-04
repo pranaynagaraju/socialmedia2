@@ -12,12 +12,12 @@ Covers login, posts, likes, comments, saved posts, profile search, and more.
 
 ---
 
-### 🔸 2. AI Feature Demo – Bot Comments 🤖
+### 🔸 2. AI Comments Feature Demo – Bot Comments 🤖
 [![Watch the AI demo](https://img.youtube.com/vi/sVQQWZgtRqc/0.jpg)](https://youtu.be/sVQQWZgtRqc)
 
-🎥 [Watch the AI demo](https://youtu.be/sVQQWZgtRqc)
+🎥 [Watch the AI Comments demo](https://youtu.be/sVQQWZgtRqc)
 
-Shows how AI characters (troller, Mr.Nice bot, Truth seeker etc) interact with posts using simulated personalities.
+Shows how AI characters (troller, Mr.Nice bot, Truth seeker etc) interact/comment with posts using simulated personalities.
 
 
 ## Description
