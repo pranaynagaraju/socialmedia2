@@ -4,16 +4,16 @@
 ## 🚀 Demo Videos
 
 ### 🔸 1. General Feature Walkthrough
-[![Watch the demo](https://img.youtube.com/vi/rk8BPjeA3y8/0.jpg)](https://youtu.be/rk8BPjeA3y8)
+[![Watch the Orbit Socials demo](https://github.com/user-attachments/assets/1056b229-6eb6-477b-9542-32f88803892e)](https://youtu.be/rk8BPjeA3y8)
 
-🎥 [Watch the Demo Video](https://youtu.be/rk8BPjeA3y8)
+🎥 [Watch the Orbit Socials demo](https://youtu.be/rk8BPjeA3y8)
 
 Covers login, posts, likes, comments, saved posts, profile search, and more.
 
 ---
 
 ### 🔸 2. AI Comments Feature Demo – Bot Comments 🤖
-[![Watch the AI demo](https://img.youtube.com/vi/sVQQWZgtRqc/0.jpg)](https://youtu.be/sVQQWZgtRqc)
+[![Watch the AI demo](https://github.com/user-attachments/assets/3b472164-18c8-44de-988b-44db6757a5f4)](https://youtu.be/sVQQWZgtRqc)
 
 🎥 [Watch the AI Comments demo](https://youtu.be/sVQQWZgtRqc)
 
