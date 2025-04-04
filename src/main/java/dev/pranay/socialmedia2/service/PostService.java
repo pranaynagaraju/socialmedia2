@@ -1,9 +1,9 @@
 package dev.pranay.socialmedia2.service;
 
-//import com.techbypranay.socialmediaapp.dto.PostDetailsDto;
 
 import dev.pranay.socialmedia2.dto.PostDetailsDto;
 import dev.pranay.socialmedia2.dto.PostDto;
+import dev.pranay.socialmedia2.entity.ai.AiCharacter;
 import dev.pranay.socialmedia2.exception.PostNotUploadedException;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -22,5 +22,7 @@ public interface PostService {
     String addComment(int postId, String comment);
 
     PostDetailsDto getPostDetails(int postId);
+
+    String addAiComment(int postId, String comment, AiCharacter aiCharacter);
 }
 

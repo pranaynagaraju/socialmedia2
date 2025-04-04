@@ -15,7 +15,6 @@ import dev.pranay.socialmedia2.repo.ProfileRepo;
 import dev.pranay.socialmedia2.repo.SaveRepo;
 import dev.pranay.socialmedia2.security.SocialMediaUserDetailsManager;
 import dev.pranay.socialmedia2.service.ProfileService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -26,16 +25,25 @@ import java.util.Optional;
 
 @Service
 public class ProfileServiceImpl implements ProfileService {
-    @Autowired
-    private SocialMediaUserDetailsManager socialMediaUserDetailsManager;
-    @Autowired
-    private ProfileRepo profileRepo;
-    @Autowired
-    private PostRepo postRepo;
-    @Autowired
-    private SaveRepo saveRepo;
-    @Autowired
-    private PasswordEncoder passwordEncoder;
+
+    private final SocialMediaUserDetailsManager socialMediaUserDetailsManager;
+
+    private final ProfileRepo profileRepo;
+
+    private final PostRepo postRepo;
+
+    private final SaveRepo saveRepo;
+
+    private final PasswordEncoder passwordEncoder;
+
+    public ProfileServiceImpl(SocialMediaUserDetailsManager socialMediaUserDetailsManager, ProfileRepo profileRepo, PostRepo postRepo, SaveRepo saveRepo, PasswordEncoder passwordEncoder) {
+        this.socialMediaUserDetailsManager = socialMediaUserDetailsManager;
+        this.profileRepo = profileRepo;
+        this.postRepo = postRepo;
+        this.saveRepo = saveRepo;
+        this.passwordEncoder = passwordEncoder;
+    }
+
 
     @Override
     public boolean signUp(Profile profile) throws ProfileAlreadyExistsException {

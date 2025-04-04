@@ -1,7 +1,6 @@
 package dev.pranay.socialmedia2.dto;
 
 
-import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 

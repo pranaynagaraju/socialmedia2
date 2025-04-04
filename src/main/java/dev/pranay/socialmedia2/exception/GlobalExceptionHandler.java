@@ -28,11 +28,5 @@ public class GlobalExceptionHandler {
         );
     }
 
-    @ExceptionHandler(ProfileNotFoundException.class)
-    public ResponseEntity<String> ProfileNotFoundException(ProfileNotFoundException ex) {
-        return new ResponseEntity<>(
-                ex.getMessage(),
-                HttpStatus.INTERNAL_SERVER_ERROR
-        );
-    }
+
 }

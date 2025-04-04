@@ -9,6 +9,7 @@ public class CommentDto {
 
     private String commentedUserName;
     private String commentedUserPhoto;
+    private String commentedUserId;
     private String comment;
     private String commentId;
 

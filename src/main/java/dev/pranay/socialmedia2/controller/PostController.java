@@ -4,7 +4,6 @@ import dev.pranay.socialmedia2.dto.PostDetailsDto;
 import dev.pranay.socialmedia2.dto.PostDto;
 import dev.pranay.socialmedia2.exception.PostNotUploadedException;
 import dev.pranay.socialmedia2.service.PostService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -17,8 +16,11 @@ import java.util.List;
 @RequestMapping("/api/post")
 @CrossOrigin(origins = "https://orbitsocials.netlify.app")
 public class PostController {
-    @Autowired
     PostService postService;
+
+    public PostController(PostService postService) {
+        this.postService = postService;
+    }
 
     @PostMapping("/upload")
     public ResponseEntity<String> uploadImage(@RequestParam("file") MultipartFile file, @RequestParam("postText") String postText) throws PostNotUploadedException, IOException {

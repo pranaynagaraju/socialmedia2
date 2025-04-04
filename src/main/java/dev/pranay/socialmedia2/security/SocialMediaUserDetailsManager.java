@@ -2,21 +2,22 @@ package dev.pranay.socialmedia2.security;
 
 import dev.pranay.socialmedia2.entity.Profile;
 import dev.pranay.socialmedia2.repo.ProfileRepo;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
-import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Component;
 
-import java.util.*;
+import java.util.Optional;
 
 @Component
 public class SocialMediaUserDetailsManager implements UserDetailsService {
 
-    @Autowired
-    private ProfileRepo profileRepo;
+
+    private final ProfileRepo profileRepo;
+
+    public SocialMediaUserDetailsManager(ProfileRepo profileRepo) {
+        this.profileRepo = profileRepo;
+    }
 
     @Override
     public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {

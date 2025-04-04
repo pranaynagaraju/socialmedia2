@@ -17,6 +17,7 @@ public class PostDto {
     private int totalComments;
     private Instant createdOn;
     private String name;
+    private String profileId;
     private String profilePicture;
     private boolean liked;
 }

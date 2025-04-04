@@ -10,6 +10,7 @@ import java.util.List;
 public class PostDetailsDto {
 
     private int postId;
+    private String postText;
     private String postImageUrl;
 
     private Boolean saved;

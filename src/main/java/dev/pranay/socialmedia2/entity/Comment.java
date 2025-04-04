@@ -3,8 +3,6 @@ package dev.pranay.socialmedia2.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
-import org.hibernate.annotations.GenericGenerator;
-import org.hibernate.annotations.IdGeneratorType;
 import org.hibernate.annotations.UuidGenerator;
 
 @Entity

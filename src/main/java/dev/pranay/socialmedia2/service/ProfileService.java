@@ -11,7 +11,7 @@ import java.util.List;
 
 public interface ProfileService {
 
-    public boolean signUp(Profile profile) throws ProfileAlreadyExistsException;
+    boolean signUp(Profile profile) throws ProfileAlreadyExistsException;
 
     UserDto getLoggedInUserDetails() throws ProfileNotFoundException;
 
