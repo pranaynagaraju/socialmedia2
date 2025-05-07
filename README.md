@@ -1,6 +1,24 @@
 # SocialMedia2 Backend
 
-![Java](https://img.shields.io/badge/Java-21%2B-blue) ![SpringBoot](https://img.shields.io/badge/Spring%20Boot-3.x-green) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15+-blue)
+
+## 🚀 Demo Videos
+
+### 🔸 1. General Feature Walkthrough
+[![Watch the Orbit Socials demo](https://github.com/user-attachments/assets/1056b229-6eb6-477b-9542-32f88803892e)](https://youtu.be/rk8BPjeA3y8)
+
+🎥 [Watch the Orbit Socials demo](https://youtu.be/rk8BPjeA3y8)
+
+Covers login, posts, likes, comments, saved posts, profile search, and more.
+
+---
+
+### 🔸 2. AI Comments Feature Demo – Bot Comments 🤖
+[![Watch the AI demo](https://github.com/user-attachments/assets/3b472164-18c8-44de-988b-44db6757a5f4)](https://youtu.be/sVQQWZgtRqc)
+
+🎥 [Watch the AI Comments demo](https://youtu.be/sVQQWZgtRqc)
+
+Shows how AI characters (troller, Mr.Nice bot, Truth seeker etc) interact/comment with posts using simulated personalities.
+
 
 ## Description
 SocialMedia2 is a modern social media backend application built with Java, Spring Boot, and PostgreSQL. It provides RESTful APIs to handle user management, posts, comments, likes, and more. Designed for scalability, it integrates with Angular for the frontend and is deployed using Docker.
@@ -10,11 +28,12 @@ SocialMedia2 is a modern social media backend application built with Java, Sprin
 - **Posts**: Create, edit, delete, and view posts.
 - **Comments**: Add, edit, delete, and view comments on posts.
 - **Likes**: Like and unlike posts and comments.
-- **Notifications**: Event-based notifications for user activities.
 - **Authentication**: Basic Authentication (Will be upgraded to JWT based authentication)
-
+- **AI Comments Feature:**  
+  Users can choose AI bots to auto-comment on their posts. Each bot has a distinct personality
+  
 ## Technologies Used
-- **Language**: Java 17+
+- **Language**: Java 21+
 - **Framework**: Spring Boot 3.x
 - **Database**: PostgreSQL 15+
 - **Build Tool**: Maven
